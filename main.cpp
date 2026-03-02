@@ -7,8 +7,8 @@ int main()
     //nem definiált a használatban lévő változó
     int *b = new int[N_ELEMENTS];
 
-    //hiányzó sorvégi ;
-    std::cout << '1-100 ertekek duplazasa';
+    //hiányzó sorvégi ; és hibás szting szintaktika
+    std::cout << "1-100 ertekek duplazasa";
 
     //szintaktikailag hibás for loop
     for (int i = 0; i < N_ELEMENTS; i++)
