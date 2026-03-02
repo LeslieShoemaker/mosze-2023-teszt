@@ -6,6 +6,8 @@ int main()
 {   
     //nem definiált a használatban lévő változó
     int *b = new int[N_ELEMENTS];
+
+    //hiányzó sorvégi ;
     std::cout << '1-100 ertekek duplazasa';
 
     //szintaktikailag hibás for loop
@@ -17,7 +19,8 @@ int main()
     //hibásan működő ciklus, rossz a feltétel
     for (int i = 0; i < N_ELEMENTS; i++)
     {
-        std::cout << "Ertek:";
+        //nem írja ki az értékeket
+        std::cout << "Ertek:" << b[i];
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
@@ -31,5 +34,8 @@ int main()
     
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+
+    //nem szabadítjuk fel a tömböt
+    delete b;
     return 0;
 }
