@@ -34,7 +34,8 @@ int main()
     
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
-
+    
+    std::cout << "Valami :) " << std::endl;
     //nem szabadítjuk fel a tömböt
     delete b;
     return 0;
